@@ -1,0 +1,112 @@
+.contact-header {
+  padding: 6rem 0 3rem;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-details h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-intro {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: var(--spacing-xl);
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item .icon {
+  background-color: var(--primary);
+  color: var(--text-light);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.contact-item:hover .icon {
+  background-color: var(--primary-light);
+  transform: scale(1.05);
+}
+
+.contact-item h3 {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.contact-item p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact-item a {
+  color: var(--accent);
+  transition: var(--transition);
+}
+
+.contact-item a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Map area */
+.contact-map {
+  display: flex;
+  flex-direction: column;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .map-container {
+    height: 100%;
+    min-height: 500px;
+  }
+}
+
+.map-caption {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: center;
+  font-style: italic;
+  padding: 0 var(--spacing-md);
+}

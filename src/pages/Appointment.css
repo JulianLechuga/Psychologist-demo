@@ -1,0 +1,189 @@
+.appointment-header {
+  padding: 6rem 0 3rem;
+}
+
+.appointment-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.appointment-info h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.info-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: var(--bg-color);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border-left: 3px solid var(--accent);
+}
+
+.info-card .icon {
+  color: var(--accent);
+  background-color: rgba(176, 137, 104, 0.1);
+  padding: 0.5rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.info-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+}
+
+.info-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
+
+.emergency-notice {
+  background-color: #fff5f5;
+  border: 1px solid #ffdcdc;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  color: #c53030;
+  font-size: 0.9rem;
+}
+
+.emergency-notice strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Form Styles */
+.form-card {
+  background-color: var(--bg-color);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="email"],
+.appointment-form input[type="tel"],
+.appointment-form select,
+.appointment-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  transition: var(--transition);
+  background-color: #fff;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(137, 161, 140, 0.2);
+}
+
+.appointment-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-policy {
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  margin-top: 4px;
+}
+
+.checkbox-label span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.btn-block {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Success State */
+.form-success {
+  padding: var(--spacing-xl) 0;
+}
+
+.success-icon {
+  color: var(--primary);
+  background-color: rgba(92, 113, 94, 0.1);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.form-success h3 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.form-success p {
+  color: var(--text-muted);
+}
